@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionProjects/Prim/binheap.h
+stdlib.h
+-
+
+E:/CLionProjects/Prim/errcodes.h
+
+E:/CLionProjects/Prim/graph.c
+graph.h
+E:/CLionProjects/Prim/graph.h
+
+E:/CLionProjects/Prim/graph.h
+stdlib.h
+-
+string.h
+-
+errcodes.h
+E:/CLionProjects/Prim/errcodes.h
+binheap.h
+E:/CLionProjects/Prim/binheap.h
+
