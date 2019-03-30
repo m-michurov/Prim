@@ -32,7 +32,7 @@ Graph * InitGraph(
     graph->parent = malloc(vertices * sizeof(short));
     graph->vertices_array = malloc(vertices * sizeof(short));
     graph->adjacency_matrix = (unsigned int *) malloc(vertices * vertices * sizeof(int));
-    graph->MST = calloc(vertices - 1, sizeof(Edge));
+    graph->MST = calloc(vertices > 0 ? vertices - 1 : 0, sizeof(Edge));
 
     if ((graph->distance == NULL || graph->indices == NULL || graph->parent == NULL ||
         graph->vertices_array == NULL || graph->adjacency_matrix == NULL || graph->MST == NULL) && vertices)
