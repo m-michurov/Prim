@@ -7,7 +7,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+// please note that calling func(data)
+// MUST result in all previously
+// allocated memory being freed
 extern inline void ensure(
         int expression,
         char * message,
