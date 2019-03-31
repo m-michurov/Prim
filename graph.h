@@ -37,7 +37,7 @@ typedef struct {
 
 
 void FreeGraph(
-        Graph * graph);
+        void * graph);
 
 
 Graph * InitGraph(

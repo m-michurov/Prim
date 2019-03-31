@@ -16,8 +16,8 @@ int main(
 
     Graph * graph = NULL;
 
-    ensure(scanf("%d", &vertices) != EOF, "bad number of lines", NULL, NULL, SUCCESS);
-    ensure(scanf("%d", &edges) != EOF, "bad number of lines", NULL, NULL, SUCCESS);
+    ensure(scanf("%d", &vertices) == 1, "bad number of lines", NULL, NULL, SUCCESS);
+    ensure(scanf("%d", &edges) == 1, "bad number of lines", NULL, NULL, SUCCESS);
 
     ensure(vertices >= 0 && vertices <= 5000, "bad number of vertices", NULL, NULL, SUCCESS);
     ensure(edges >= 0 && edges <= (vertices - 1) * vertices / 2, "bad number of edges", NULL, NULL, SUCCESS);

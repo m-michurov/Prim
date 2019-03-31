@@ -4,17 +4,17 @@
 #define PRIM_ENSURE_H
 
 
-#include "graph.h"
+#include "errcodes.h"
 
 
 extern inline void ensure(
-        int expr,
+        int expression,
         char * message,
-        void (* func)(Graph *),
-        Graph * data,
+        void (* func)(void *),
+        void * data,
         int exit_code)
 {
-    if (!expr) {
+    if (!expression) {
         if (func != NULL)
             func(data);
 

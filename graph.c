@@ -2,17 +2,17 @@
 
 
 void FreeGraph(
-        Graph * graph)
+        void * graph)
 {
     if (graph == NULL)
         return;
 
-    free(graph->distance);
-    free(graph->indices);
-    free(graph->parent);
-    free(graph->vertices_array);
-    free(graph->adjacency_matrix);
-    free(graph->MST);
+    free(((Graph *)graph)->distance);
+    free(((Graph *)graph)->indices);
+    free(((Graph *)graph)->parent);
+    free(((Graph *)graph)->vertices_array);
+    free(((Graph *)graph)->adjacency_matrix);
+    free(((Graph *)graph)->MST);
 
     free(graph);
 }
