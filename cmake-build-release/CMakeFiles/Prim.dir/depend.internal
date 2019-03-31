@@ -4,8 +4,12 @@
 CMakeFiles/Prim.dir/binheap.c.obj
  E:/CLionProjects/Prim/binheap.c
  E:/CLionProjects/Prim/binheap.h
+CMakeFiles/Prim.dir/ensure.c.obj
+ E:/CLionProjects/Prim/ensure.c
+ E:/CLionProjects/Prim/ensure.h
 CMakeFiles/Prim.dir/graph.c.obj
  E:/CLionProjects/Prim/binheap.h
+ E:/CLionProjects/Prim/ensure.h
  E:/CLionProjects/Prim/errcodes.h
  E:/CLionProjects/Prim/graph.c
  E:/CLionProjects/Prim/graph.h
@@ -17,6 +21,7 @@ CMakeFiles/Prim.dir/main.c.obj
  E:/CLionProjects/Prim/main.c
 CMakeFiles/Prim.dir/prim.c.obj
  E:/CLionProjects/Prim/binheap.h
+ E:/CLionProjects/Prim/ensure.h
  E:/CLionProjects/Prim/errcodes.h
  E:/CLionProjects/Prim/graph.h
  E:/CLionProjects/Prim/prim.c

@@ -9,6 +9,7 @@
 
 #include "binheap.h"
 #include "errcodes.h"
+#include "ensure.h"
 
 
 typedef struct {

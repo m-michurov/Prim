@@ -4,6 +4,9 @@
 int MakeMST(
         Graph * graph)
 {
+    if (graph == NULL)
+        return 0;
+
     short v = 0;
 
     Heap * vertices_queue = NULL;

@@ -14,6 +14,8 @@ int main(
     int edges = 0;
     int vertices = 0;
 
+    int result = 0;
+
     Graph * graph = NULL;
 
     ensure(scanf("%d", &vertices) == 1, "bad number of lines", NULL, NULL, SUCCESS);
@@ -41,7 +43,10 @@ int main(
         graph->adjacency_matrix[dst * graph->vertices + src] = (unsigned int) length;
     }
 
-    ensure(MakeMST(graph) == SUCCESS, "no spanning tree", FreeGraph, graph, SUCCESS);
+    result = MakeMST(graph);
+
+    ensure(result != ALLOC_ERROR, "memory allocation error", FreeGraph, graph, SUCCESS);
+    ensure(result != MST_ERROR, "no spanning tree", FreeGraph, graph, SUCCESS);
 
     for (int k = 0; k < graph->mst_size; k++) {
         printf("%d %d\n", graph->MST[k].src + 1, graph->MST[k].dst + 1);

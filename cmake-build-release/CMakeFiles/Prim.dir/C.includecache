@@ -10,6 +10,10 @@ E:/CLionProjects/Prim/binheap.h
 stdlib.h
 -
 
+E:/CLionProjects/Prim/ensure.c
+ensure.h
+E:/CLionProjects/Prim/ensure.h
+
 E:/CLionProjects/Prim/ensure.h
 stdio.h
 -
@@ -31,6 +35,8 @@ binheap.h
 E:/CLionProjects/Prim/binheap.h
 errcodes.h
 E:/CLionProjects/Prim/errcodes.h
+ensure.h
+E:/CLionProjects/Prim/ensure.h
 
 E:/CLionProjects/Prim/main.c
 stdio.h

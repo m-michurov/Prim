@@ -10,20 +10,11 @@
 // please note that calling func(data)
 // MUST result in all previously
 // allocated memory being freed
-extern inline void ensure(
+void ensure(
         int expression,
         char * message,
         void (* func)(void *),
         void * data,
-        int exit_code)
-{
-    if (!expression) {
-        if (func != NULL)
-            func(data);
-
-        puts(message);
-        exit(exit_code);
-    }
-}
+        int exit_code);
 
 #endif
