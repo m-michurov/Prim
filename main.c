@@ -26,7 +26,8 @@ int main(
 
     ensure(graph != NULL, "memory allocation error", NULL, NULL, ALLOC_ERROR);
 
-    for (int k = 0; k < graph->edges; k++) {
+    for (int k = 0; k < graph->edges; k++)
+    {
         ensure(scanf("%d %d %d", &src, &dst, &length) == 3, "bad number of lines", FreeGraph, graph, SUCCESS);
 
         ensure(src > 0 && src < graph->vertices + 1 && dst > 0 && dst < graph->vertices + 1,
