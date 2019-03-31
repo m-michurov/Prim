@@ -4,7 +4,8 @@
 #define PRIM_ENSURE_H
 
 
-#include "errcodes.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 
 extern inline void ensure(
