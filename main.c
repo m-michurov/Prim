@@ -45,7 +45,7 @@ int main(
 
     result = MakeMST(graph);
 
-    ensure(result != ALLOC_ERROR, "memory allocation error", FreeGraph, graph, SUCCESS);
+    ensure(result != ALLOC_ERROR, "memory allocation error", FreeGraph, graph, ALLOC_ERROR);
     ensure(result != MST_ERROR, "no spanning tree", FreeGraph, graph, SUCCESS);
 
     for (int k = 0; k < graph->mst_size; k++) {
