@@ -52,11 +52,13 @@ Graph * InitGraph(
     graph->edges = edges;
     graph->mst_size = 0;
 
-    for (short k = 0; k < vertices; k++)
+    for (short k = 0; k < vertices; k++) {
         graph->vertices_array[k] = k;
+    }
 
-    for (unsigned int k = 0; k < vertices; k++)
+    for (unsigned int k = 0; k < vertices; k++) {
         graph->indices[k] = k;
+    }
 
     return graph;
 }

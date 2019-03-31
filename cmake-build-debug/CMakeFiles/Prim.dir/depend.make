@@ -10,6 +10,7 @@ CMakeFiles/Prim.dir/graph.c.obj: ../graph.c
 CMakeFiles/Prim.dir/graph.c.obj: ../graph.h
 
 CMakeFiles/Prim.dir/main.c.obj: ../binheap.h
+CMakeFiles/Prim.dir/main.c.obj: ../ensurance.h
 CMakeFiles/Prim.dir/main.c.obj: ../errcodes.h
 CMakeFiles/Prim.dir/main.c.obj: ../graph.h
 CMakeFiles/Prim.dir/main.c.obj: ../main.c

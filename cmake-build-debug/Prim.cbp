@@ -80,6 +80,9 @@
 		<Unit filename="E:/CLionProjects/Prim/binheap.h">
 			<Option target="Prim"/>
 		</Unit>
+		<Unit filename="E:/CLionProjects/Prim/ensure.h">
+			<Option target="Prim"/>
+		</Unit>
 		<Unit filename="E:/CLionProjects/Prim/errcodes.h">
 			<Option target="Prim"/>
 		</Unit>

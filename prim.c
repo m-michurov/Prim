@@ -8,9 +8,12 @@ int MakeMST(
 
     Heap * vertices_queue = NULL;
 
-    if (graph->vertices && graph->edges) {
-
+    if (graph->vertices && graph->edges)
+    {
         vertices_queue = BuildHeap(graph->vertices_array, graph->distance, graph->indices, graph->vertices);
+
+        if (vertices_queue == NULL)
+            return ALLOC_ERROR;
 
         v = ExtractMin(vertices_queue);
 
@@ -25,8 +28,6 @@ int MakeMST(
                     DecreaseKey(vertices_queue, u, graph->adjacency_matrix[v * graph->vertices + u]);
                     graph->parent[u] = v;
                 }
-
-
             }
             v = ExtractMin(vertices_queue);
 
@@ -40,8 +41,9 @@ int MakeMST(
 
     free(vertices_queue);
 
-    if (graph->mst_size != graph->vertices - 1 || !graph->vertices)
+    if (graph->mst_size != graph->vertices - 1 || !graph->vertices) {
         return MST_ERROR;
+    }
 
     return SUCCESS;
 }

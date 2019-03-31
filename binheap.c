@@ -7,15 +7,16 @@ static void sift(
     static unsigned int min_child;
     static short buff;
 
-    while (i * 2 + 1 < heap->heap_size) {
-
+    while (i * 2 + 1 < heap->heap_size)
+    {
         if ((i * 2 + 1 == heap->heap_size - 1) || (heap->key[heap->array[i * 2 + 1]] < heap->key[heap->array[i * 2 + 2]]))
             min_child = i * 2 + 1;
 
         else
             min_child = i * 2 + 2;
 
-        if (heap->key[heap->array[i]] > heap->key[heap->array[min_child]]) {
+        if (heap->key[heap->array[i]] > heap->key[heap->array[min_child]])
+        {
             buff = heap->array[i];
             heap->array[i] = heap->array[min_child];
             heap->array[min_child] = buff;
@@ -44,7 +45,7 @@ Heap * BuildHeap(
 
     new_heap->key = key;
     new_heap->array = array;
-    new_heap->heap_size = size;
+    new_heap->heap_size = new_heap->max_heap_size = size;
     new_heap->index = index;
 
     for (long long int i = new_heap->heap_size / 2 - 1; i >= 0; i--) {
@@ -58,7 +59,7 @@ Heap * BuildHeap(
 short ExtractMin(
         Heap * heap)
 {
-    if (heap == NULL)
+    if (heap == NULL || heap->heap_size == 0)
         return -1;
 
     short min = heap->array[0];
@@ -82,7 +83,7 @@ int DecreaseKey(
 {
     static short buff;
 
-    if (key >= heap->key[element_value]) {
+    if (key >= heap->key[element_value] || element_value >= heap->max_heap_size) {
         return -1;
     }
 
@@ -90,7 +91,8 @@ int DecreaseKey(
 
     unsigned int element_index = heap->index[element_value];
 
-    while (element_index > 0 && heap->key[heap->array[(element_index - 1) / 2]] > heap->key[heap->array[element_index]]) {
+    while (element_index > 0 && heap->key[heap->array[(element_index - 1) / 2]] > heap->key[heap->array[element_index]])
+    {
         buff = heap->array[element_index];
         heap->array[element_index] = heap->array[(element_index - 1) / 2];
         heap->array[(element_index - 1) / 2] = buff;

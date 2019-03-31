@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 #include "graph.h"
+#include "errcodes.h"
+#include "ensure.h"
 
 
 int main(
@@ -14,48 +16,22 @@ int main(
 
     Graph * graph = NULL;
 
-    if (scanf("%d", &vertices) == EOF) {
-        puts("bad number of lines");
-        return SUCCESS;
-    }
-    if (scanf("%d", &edges) == EOF) {
-        puts("bad number of lines");
-        return SUCCESS;
-    }
+    ensure(scanf("%d", &vertices) != EOF, "bad number of lines", NULL, NULL, SUCCESS);
+    ensure(scanf("%d", &edges) != EOF, "bad number of lines", NULL, NULL, SUCCESS);
 
-    if (!(vertices >= 0 && vertices <= 5000)) {
-        puts("bad number of vertices");
-        return SUCCESS;
-    }
-    if (!(edges >= 0 && edges <= (vertices - 1) * vertices / 2)) {
-        puts("bad number of edges");
-        return SUCCESS;
-    }
+    ensure(vertices >= 0 && vertices <= 5000, "bad number of vertices", NULL, NULL, SUCCESS);
+    ensure(edges >= 0 && edges <= (vertices - 1) * vertices / 2, "bad number of edges", NULL, NULL, SUCCESS);
 
     graph = InitGraph((unsigned int) vertices, (unsigned int) edges);
 
-    if (graph == NULL) {
-        puts("memory allocation error");
-        return ALLOC_ERROR;
-    }
-
+    ensure(graph != NULL, "memory allocation error", NULL, NULL, ALLOC_ERROR);
 
     for (int k = 0; k < graph->edges; k++) {
-        if (scanf("%d %d %d", &src, &dst, &length) == EOF) {
-            puts("bad number of lines");
-            FreeGraph(graph);
-            return SUCCESS;
-        }
-        if (!(src > 0 && src < graph->vertices + 1) || !(dst > 0 && dst < graph->vertices + 1)) {
-            puts("bad vertex");
-            FreeGraph(graph);
-            return SUCCESS;
-        }
-        if (!(length >= 0 && length <= INT_MAX)) {
-            puts("bad length");
-            FreeGraph(graph);
-            return SUCCESS;
-        }
+        ensure(scanf("%d %d %d", &src, &dst, &length) == 3, "bad number of lines", FreeGraph, graph, SUCCESS);
+
+        ensure(src > 0 && src < graph->vertices + 1 && dst > 0 && dst < graph->vertices + 1,
+                "bad vertex", FreeGraph, graph, SUCCESS);
+        ensure(length >= 0 && length <= INT_MAX, "bad length", FreeGraph, graph, SUCCESS);
 
         src--;
         dst--;
@@ -64,12 +40,10 @@ int main(
         graph->adjacency_matrix[dst * graph->vertices + src] = (unsigned int) length;
     }
 
+    ensure(MakeMST(graph) == SUCCESS, "no spanning tree", FreeGraph, graph, SUCCESS);
 
-    if (MakeMST(graph) == SUCCESS) {
-        for (int k = 0; k < graph->mst_size; k++)
-            printf("%d %d\n", graph->MST[k].src + 1, graph->MST[k].dst + 1);
-    } else {
-        puts("no spanning tree");
+    for (int k = 0; k < graph->mst_size; k++) {
+        printf("%d %d\n", graph->MST[k].src + 1, graph->MST[k].dst + 1);
     }
 
     FreeGraph(graph);
