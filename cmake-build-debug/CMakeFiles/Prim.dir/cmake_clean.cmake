@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Prim.dir/prim.c.obj"
   "CMakeFiles/Prim.dir/binheap.c.obj"
   "CMakeFiles/Prim.dir/graph.c.obj"
-  "CMakeFiles/Prim.dir/ensure.c.obj"
   "Prim.pdb"
   "Prim.exe"
   "Prim.exe.manifest"

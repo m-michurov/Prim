@@ -7,14 +7,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// please note that calling func(data)
-// MUST result in all previously
-// allocated memory being freed
-void ensure(
-        int expression,
-        char * message,
-        void (* func)(void *),
-        void * data,
-        int exit_code);
+
+#ifndef ensure
+#define ensure(expression, message, func, data, exit_code) \
+{ \
+    if (!(expression)) { \
+        if (func != NULL) \
+            func(data); \
+            printf("%s\n", message); \
+            return exit_code; \
+    } \
+}
+#endif
 
 #endif

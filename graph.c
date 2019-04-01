@@ -52,7 +52,7 @@ Graph * InitGraph(
     graph->edges = edges;
     graph->mst_size = 0;
 
-    for (short k = 0; k < vertices; k++) {
+    for (unsigned short k = 0; k < vertices; k++) {
         graph->vertices_array[k] = k;
     }
 

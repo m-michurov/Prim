@@ -3,4 +3,4 @@ project(Prim C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Prim main.c prim.c binheap.c binheap.h graph.h errcodes.h graph.c ensure.h ensure.c)
+add_executable(Prim main.c prim.c binheap.c binheap.h graph.h errcodes.h graph.c ensure.h)

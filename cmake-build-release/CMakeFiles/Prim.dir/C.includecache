@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+E:/CLionProjects/Prim/binheap.c
+binheap.h
+E:/CLionProjects/Prim/binheap.h
+
 E:/CLionProjects/Prim/binheap.h
 stdlib.h
 -
@@ -18,6 +22,10 @@ stdlib.h
 
 E:/CLionProjects/Prim/errcodes.h
 
+E:/CLionProjects/Prim/graph.c
+graph.h
+E:/CLionProjects/Prim/graph.h
+
 E:/CLionProjects/Prim/graph.h
 stdlib.h
 -
@@ -27,6 +35,8 @@ binheap.h
 E:/CLionProjects/Prim/binheap.h
 errcodes.h
 E:/CLionProjects/Prim/errcodes.h
+ensure.h
+E:/CLionProjects/Prim/ensure.h
 
 E:/CLionProjects/Prim/main.c
 stdio.h
@@ -39,4 +49,8 @@ errcodes.h
 E:/CLionProjects/Prim/errcodes.h
 ensure.h
 E:/CLionProjects/Prim/ensure.h
+
+E:/CLionProjects/Prim/prim.c
+graph.h
+E:/CLionProjects/Prim/graph.h
 

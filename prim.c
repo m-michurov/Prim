@@ -4,10 +4,9 @@
 int MakeMST(
         Graph * graph)
 {
-    if (graph == NULL)
-        return 0;
+    ensure(graph != NULL, "invalid input parameter value: graph is NULL pointer", FreeGraph, graph, ALLOC_ERROR);
 
-    short v = 0;
+    unsigned short v = 0;
 
     Heap * vertices_queue = NULL;
 
@@ -15,27 +14,26 @@ int MakeMST(
     {
         vertices_queue = BuildHeap(graph->vertices_array, graph->distance, graph->indices, graph->vertices);
 
-        if (vertices_queue == NULL)
-            return ALLOC_ERROR;
+        ensure(vertices_queue != NULL, "unable to allocate memory for vertices queue", FreeGraph, graph, ALLOC_ERROR);
 
-        v = ExtractMin(vertices_queue);
+        v = (unsigned short) ExtractMin(vertices_queue);
 
         while (vertices_queue->heap_size > 0)
         {
-            for (short u = 0; u < graph->vertices; u++)
+            for (unsigned short u = 0; u < graph->vertices; u++)
             {
                 if (graph->adjacency_matrix[v * graph->vertices + u] != UINT_MAX
                     && vertices_queue->index[u] < vertices_queue->heap_size
                     && graph->adjacency_matrix[v * graph->vertices + u] < graph->distance[u])
                 {
                     DecreaseKey(vertices_queue, u, graph->adjacency_matrix[v * graph->vertices + u]);
-                    graph->parent[u] = v;
+                    graph->parent[u] = (short) v;
                 }
             }
-            v = ExtractMin(vertices_queue);
+            v = (unsigned short) ExtractMin(vertices_queue);
 
-            if (graph->parent[v] != -1) {
-                graph->MST[graph->mst_size].src = graph->parent[v];
+            if (graph->parent[v] != NO_PARENT) {
+                graph->MST[graph->mst_size].src = (unsigned short) graph->parent[v];
                 graph->MST[graph->mst_size].dst = v;
                 graph->mst_size++;
             }

@@ -5,7 +5,7 @@ static void sift(
         unsigned int i)
 {
     static unsigned int min_child;
-    static short buff;
+    static unsigned short buff;
 
     while (i * 2 + 1 < heap->heap_size)
     {
@@ -33,7 +33,7 @@ static void sift(
 }
 
 Heap * BuildHeap(
-        short * array,
+        unsigned short * array,
         unsigned int * key,
         unsigned int * index,
         const size_t size)
@@ -62,7 +62,7 @@ short ExtractMin(
     if (heap == NULL || heap->heap_size == 0)
         return -1;
 
-    short min = heap->array[0];
+    unsigned short min = heap->array[0];
 
     heap->array[0] = heap->array[--heap->heap_size];
 
@@ -78,10 +78,10 @@ short ExtractMin(
 
 int DecreaseKey(
         Heap * heap,
-        const short element_value,
+        const unsigned short element_value,
         const unsigned int key)
 {
-    static short buff;
+    static unsigned short buff;
 
     if (key >= heap->key[element_value] || element_value >= heap->max_heap_size) {
         return -1;

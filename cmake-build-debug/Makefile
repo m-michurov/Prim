@@ -149,33 +149,6 @@ binheap.c.s:
 	$(MAKE) -f CMakeFiles\Prim.dir\build.make CMakeFiles/Prim.dir/binheap.c.s
 .PHONY : binheap.c.s
 
-ensure.obj: ensure.c.obj
-
-.PHONY : ensure.obj
-
-# target to build an object file
-ensure.c.obj:
-	$(MAKE) -f CMakeFiles\Prim.dir\build.make CMakeFiles/Prim.dir/ensure.c.obj
-.PHONY : ensure.c.obj
-
-ensure.i: ensure.c.i
-
-.PHONY : ensure.i
-
-# target to preprocess a source file
-ensure.c.i:
-	$(MAKE) -f CMakeFiles\Prim.dir\build.make CMakeFiles/Prim.dir/ensure.c.i
-.PHONY : ensure.c.i
-
-ensure.s: ensure.c.s
-
-.PHONY : ensure.s
-
-# target to generate assembly for a file
-ensure.c.s:
-	$(MAKE) -f CMakeFiles\Prim.dir\build.make CMakeFiles/Prim.dir/ensure.c.s
-.PHONY : ensure.c.s
-
 graph.obj: graph.c.obj
 
 .PHONY : graph.obj
@@ -269,9 +242,6 @@ help:
 	@echo ... binheap.obj
 	@echo ... binheap.i
 	@echo ... binheap.s
-	@echo ... ensure.obj
-	@echo ... ensure.i
-	@echo ... ensure.s
 	@echo ... graph.obj
 	@echo ... graph.i
 	@echo ... graph.s

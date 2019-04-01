@@ -9,11 +9,15 @@
 
 #include "binheap.h"
 #include "errcodes.h"
+#include "ensure.h"
+
+
+#define NO_PARENT   -1
 
 
 typedef struct {
-    short src;
-    short dst;
+    unsigned short src;
+    unsigned short dst;
 
     unsigned int length;
 } Edge;
@@ -24,7 +28,7 @@ typedef struct {
     unsigned int * distance;
     unsigned int * indices;
 
-    short * vertices_array;
+    unsigned short * vertices_array;
     short * parent;
 
     Edge * MST;

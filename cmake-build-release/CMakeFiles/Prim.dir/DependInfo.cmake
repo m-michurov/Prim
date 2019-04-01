@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "E:/CLionProjects/Prim/binheap.c" "E:/CLionProjects/Prim/cmake-build-release/CMakeFiles/Prim.dir/binheap.c.obj"
-  "E:/CLionProjects/Prim/ensure.c" "E:/CLionProjects/Prim/cmake-build-release/CMakeFiles/Prim.dir/ensure.c.obj"
   "E:/CLionProjects/Prim/graph.c" "E:/CLionProjects/Prim/cmake-build-release/CMakeFiles/Prim.dir/graph.c.obj"
   "E:/CLionProjects/Prim/main.c" "E:/CLionProjects/Prim/cmake-build-release/CMakeFiles/Prim.dir/main.c.obj"
   "E:/CLionProjects/Prim/prim.c" "E:/CLionProjects/Prim/cmake-build-release/CMakeFiles/Prim.dir/prim.c.obj"
