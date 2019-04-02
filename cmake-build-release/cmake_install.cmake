@@ -1,4 +1,4 @@
-# Install script for directory: E:/CLionProjects/Prim
+# Install script for directory: H:/NSUProgLabs/Prim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/CLionProjects/Prim/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "H:/NSUProgLabs/Prim/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

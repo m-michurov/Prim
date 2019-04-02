@@ -5,7 +5,7 @@ int MakeMST(
         Graph * graph)
 {
     if (graph == NULL)
-	    return -1;
+        return ALLOC_ERROR;
 
     unsigned short v = 0;
 

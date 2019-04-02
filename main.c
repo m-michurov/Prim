@@ -19,8 +19,8 @@ int main(
 
     Graph * graph = NULL;
 
-    ensure(scanf("%d", &vertices) == 1, "bad number of lines", FreeGraph, graph, SUCCESS);
-    ensure(scanf("%d", &edges) == 1, "bad number of lines", FreeGraph, graph, SUCCESS);
+    ensure(scanf("%d", &vertices) != EOF, "bad number of lines", FreeGraph, graph, SUCCESS);
+    ensure(scanf("%d", &edges) != EOF, "bad number of lines", FreeGraph, graph, SUCCESS);
 
     ensure(vertices >= 0 && vertices <= 5000, "bad number of vertices", FreeGraph, graph, SUCCESS);
     ensure(edges >= 0 && edges <= (vertices - 1) * vertices / 2, "bad number of edges", FreeGraph, graph, SUCCESS);
@@ -31,7 +31,7 @@ int main(
 
     for (int k = 0; k < graph->edges; k++)
     {
-        ensure(scanf("%d %d %d", &src, &dst, &length) == 3, "bad number of lines", FreeGraph, graph, SUCCESS);
+        ensure(scanf("%d %d %d", &src, &dst, &length) != EOF, "bad number of lines", FreeGraph, graph, SUCCESS);
 
         ensure(src > 0 && src < graph->vertices + 1 && dst > 0 && dst < graph->vertices + 1,
                 "bad vertex", FreeGraph, graph, SUCCESS);

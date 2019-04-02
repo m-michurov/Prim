@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/CLionProjects/Prim/binheap.c" "E:/CLionProjects/Prim/cmake-build-debug/CMakeFiles/Prim.dir/binheap.c.obj"
-  "E:/CLionProjects/Prim/graph.c" "E:/CLionProjects/Prim/cmake-build-debug/CMakeFiles/Prim.dir/graph.c.obj"
-  "E:/CLionProjects/Prim/main.c" "E:/CLionProjects/Prim/cmake-build-debug/CMakeFiles/Prim.dir/main.c.obj"
-  "E:/CLionProjects/Prim/prim.c" "E:/CLionProjects/Prim/cmake-build-debug/CMakeFiles/Prim.dir/prim.c.obj"
+  "H:/NSUProgLabs/Prim/binheap.c" "H:/NSUProgLabs/Prim/cmake-build-debug/CMakeFiles/Prim.dir/binheap.c.obj"
+  "H:/NSUProgLabs/Prim/graph.c" "H:/NSUProgLabs/Prim/cmake-build-debug/CMakeFiles/Prim.dir/graph.c.obj"
+  "H:/NSUProgLabs/Prim/main.c" "H:/NSUProgLabs/Prim/cmake-build-debug/CMakeFiles/Prim.dir/main.c.obj"
+  "H:/NSUProgLabs/Prim/prim.c" "H:/NSUProgLabs/Prim/cmake-build-debug/CMakeFiles/Prim.dir/prim.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
