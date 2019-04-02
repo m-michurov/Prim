@@ -9,7 +9,6 @@
 
 #include "binheap.h"
 #include "errcodes.h"
-#include "ensure.h"
 
 
 #define NO_PARENT   -1

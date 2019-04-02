@@ -4,7 +4,8 @@
 int MakeMST(
         Graph * graph)
 {
-    ensure(graph != NULL, "invalid input parameter value: graph is NULL pointer", FreeGraph, graph, ALLOC_ERROR);
+    if (graph == NULL)
+	    return -1;
 
     unsigned short v = 0;
 
@@ -14,7 +15,8 @@ int MakeMST(
     {
         vertices_queue = BuildHeap(graph->vertices_array, graph->distance, graph->indices, graph->vertices);
 
-        ensure(vertices_queue != NULL, "unable to allocate memory for vertices queue", FreeGraph, graph, ALLOC_ERROR);
+        if (vertices_queue == NULL)
+			return ALLOC_ERROR;
 
         v = (unsigned short) ExtractMin(vertices_queue);
 

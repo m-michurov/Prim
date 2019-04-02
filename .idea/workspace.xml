@@ -79,7 +79,7 @@
     <session id="-301833474">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -305,7 +305,7 @@
       <workItem from="1554026731090" duration="1569000" />
       <workItem from="1554038147297" duration="34000" />
       <workItem from="1554049203739" duration="291000" />
-      <workItem from="1554120403937" duration="624000" />
+      <workItem from="1554120403937" duration="701000" />
     </task>
     <task id="LOCAL-00001" summary="fixed memory allocation error (graph.c : 35)">
       <created>1553964117948</created>
@@ -360,7 +360,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25814000" />
+    <option name="totallyTimeSpent" value="25891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
