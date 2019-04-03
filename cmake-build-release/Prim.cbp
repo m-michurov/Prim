@@ -8,97 +8,97 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="H:/NSUProgLabs/Prim/cmake-build-release"/>
+				<Option working_dir="E:/CLionProjects/Prim/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="H:/NSUProgLabs/Prim/cmake-build-release"/>
+				<Option working_dir="E:/CLionProjects/Prim/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Prim">
-				<Option output="H:/NSUProgLabs/Prim/cmake-build-release/Prim.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="H:/NSUProgLabs/Prim/cmake-build-release"/>
+				<Option output="E:/CLionProjects/Prim/cmake-build-release/Prim.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/CLionProjects/Prim/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include"/>
-					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include-fixed"/>
-					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 Prim"/>
-					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 Prim"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Prim/fast">
-				<Option output="H:/NSUProgLabs/Prim/cmake-build-release/Prim.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="H:/NSUProgLabs/Prim/cmake-build-release"/>
+				<Option output="E:/CLionProjects/Prim/cmake-build-release/Prim.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/CLionProjects/Prim/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include"/>
-					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include-fixed"/>
-					<Add directory="C:/tools/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 Prim/fast"/>
-					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 Prim/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="H:/NSUProgLabs/Prim/cmake-build-release"/>
+				<Option working_dir="E:/CLionProjects/Prim/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/tools/mingw64/bin/mingw32-make.exe -f &quot;H:/NSUProgLabs/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;E:/CLionProjects/Prim/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="H:/NSUProgLabs/Prim/binheap.c">
+		<Unit filename="E:/CLionProjects/Prim/binheap.c">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/binheap.h">
+		<Unit filename="E:/CLionProjects/Prim/binheap.h">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/ensure.h">
+		<Unit filename="E:/CLionProjects/Prim/ensure.h">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/errcodes.h">
+		<Unit filename="E:/CLionProjects/Prim/errcodes.h">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/graph.c">
+		<Unit filename="E:/CLionProjects/Prim/graph.c">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/graph.h">
+		<Unit filename="E:/CLionProjects/Prim/graph.h">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/main.c">
+		<Unit filename="E:/CLionProjects/Prim/main.c">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/prim.c">
+		<Unit filename="E:/CLionProjects/Prim/prim.c">
 			<Option target="Prim"/>
 		</Unit>
-		<Unit filename="H:/NSUProgLabs/Prim/CMakeLists.txt">
+		<Unit filename="E:/CLionProjects/Prim/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

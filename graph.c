@@ -31,7 +31,7 @@ Graph * InitGraph(
     graph->indices = malloc(vertices * sizeof(unsigned int));
     graph->parent = malloc(vertices * sizeof(short));
     graph->vertices_array = malloc(vertices * sizeof(short));
-    graph->adjacency_matrix = (unsigned int *) malloc(vertices * vertices * sizeof(int));
+    graph->adjacency_matrix = (unsigned int *) malloc(vertices * (1 + vertices) / 2 * sizeof(unsigned int));
     graph->MST = calloc(vertices > 0 ? vertices - 1 : 0, sizeof(Edge));
 
     if ((graph->distance == NULL || graph->indices == NULL || graph->parent == NULL ||
@@ -42,7 +42,7 @@ Graph * InitGraph(
         return NULL;
     }
 
-    memset(graph->adjacency_matrix, 0xFF, (size_t) vertices * (size_t) vertices * sizeof(unsigned int));
+    memset(graph->adjacency_matrix, 0xFF, (size_t) vertices * (1 + vertices) / 2 * sizeof(unsigned int));
     memset(graph->parent, 0xFF, (size_t) vertices * sizeof(short));
     memset(graph->distance, 0xFF, (size_t) vertices * sizeof(unsigned int));
 

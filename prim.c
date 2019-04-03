@@ -1,11 +1,15 @@
 #include "graph.h"
+#include <stdio.h>
+
+
+#define offset(vertex) ((1 + (vertex)) * (vertex) / 2)
 
 
 int MakeMST(
         Graph * graph)
 {
     if (graph == NULL)
-        return ALLOC_ERROR;
+	    return -1;
 
     unsigned short v = 0;
 
@@ -24,15 +28,19 @@ int MakeMST(
         {
             for (unsigned short u = 0; u < graph->vertices; u++)
             {
-                if (graph->adjacency_matrix[v * graph->vertices + u] != UINT_MAX
+                if (graph->adjacency_matrix[offset(u > v ? u : v) + (u > v ? v : u)] != UINT_MAX
                     && vertices_queue->index[u] < vertices_queue->heap_size
-                    && graph->adjacency_matrix[v * graph->vertices + u] < graph->distance[u])
+                    && graph->adjacency_matrix[offset(u > v ? u : v) + (u > v ? v : u)] < graph->distance[u])
                 {
-                    DecreaseKey(vertices_queue, u, graph->adjacency_matrix[v * graph->vertices + u]);
+                    DecreaseKey(vertices_queue, u, graph->adjacency_matrix[offset(u > v ? u : v) + (u > v ? v : u)]);
                     graph->parent[u] = (short) v;
+                    //printf("assigned graph->parent[%d] = %d\n", u + 1, graph->parent[u] + 1);
                 }
             }
             v = (unsigned short) ExtractMin(vertices_queue);
+
+            //int a = graph->parent[v];
+            //printf("graph->parent[%d] = %d\n", v + 1, graph->parent[v] + 1);
 
             if (graph->parent[v] != NO_PARENT) {
                 graph->MST[graph->mst_size].src = (unsigned short) graph->parent[v];

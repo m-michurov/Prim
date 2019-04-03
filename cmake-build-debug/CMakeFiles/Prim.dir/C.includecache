@@ -6,37 +6,51 @@
 
 #IncludeRegexTransform: 
 
-H:/NSUProgLabs/Prim/binheap.h
+E:/CLionProjects/Prim/binheap.c
+binheap.h
+E:/CLionProjects/Prim/binheap.h
+
+E:/CLionProjects/Prim/binheap.h
 stdlib.h
 -
 
-H:/NSUProgLabs/Prim/ensure.h
+E:/CLionProjects/Prim/ensure.h
 stdio.h
 -
 stdlib.h
 -
 
-H:/NSUProgLabs/Prim/errcodes.h
+E:/CLionProjects/Prim/errcodes.h
 
-H:/NSUProgLabs/Prim/graph.h
+E:/CLionProjects/Prim/graph.c
+graph.h
+E:/CLionProjects/Prim/graph.h
+
+E:/CLionProjects/Prim/graph.h
 stdlib.h
 -
 string.h
 -
 binheap.h
-H:/NSUProgLabs/Prim/binheap.h
+E:/CLionProjects/Prim/binheap.h
 errcodes.h
-H:/NSUProgLabs/Prim/errcodes.h
+E:/CLionProjects/Prim/errcodes.h
 
-H:/NSUProgLabs/Prim/main.c
+E:/CLionProjects/Prim/main.c
 stdio.h
 -
 limits.h
 -
 graph.h
-H:/NSUProgLabs/Prim/graph.h
+E:/CLionProjects/Prim/graph.h
 errcodes.h
-H:/NSUProgLabs/Prim/errcodes.h
+E:/CLionProjects/Prim/errcodes.h
 ensure.h
-H:/NSUProgLabs/Prim/ensure.h
+E:/CLionProjects/Prim/ensure.h
+
+E:/CLionProjects/Prim/prim.c
+graph.h
+E:/CLionProjects/Prim/graph.h
+stdio.h
+-
 

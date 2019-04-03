@@ -11,6 +11,11 @@
 #include "errcodes.h"
 
 
+#ifndef offset
+#define offset(vertex) ((1 + (vertex)) * (vertex) / 2)
+#endif
+
+
 #define NO_PARENT   -1
 
 
